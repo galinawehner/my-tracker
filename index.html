@@ -285,14 +285,9 @@
     const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
     const timeTitles = { independent: 'Привычки дня', morning: 'Утренний ритуал', day: 'Дневной фокус', night: 'Вечерний уход' };
 
-    // Начальные данные
-    const initialData = [
-      { id: 1, name: "Пройти 10 000 шагов", time: "independent", history: {} },
-      { id: 2, name: "Выпить 2л воды", time: "independent", history: {} },
-      { id: 3, name: "Позвонить близким", time: "independent", history: {} },
-      { id: 4, name: "Медитация и дыхание", time: "morning", history: {} },
-      { id: 5, name: "Чтение книги", time: "night", history: {} }
-    ];
+    // Начальные данные (пустой список)
+    const initialData = [];
+
 
     let habits = JSON.parse(localStorage.getItem('my_aesthetic_habits_v5')) || initialData;
 
